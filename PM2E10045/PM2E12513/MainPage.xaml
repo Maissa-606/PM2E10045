@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12513.MainPage">
+
+
+
+    <StackLayout BackgroundColor=" #1c2c3b ">
+
+
+        <Frame BackgroundColor=" #5c4444 " HeightRequest="30">
+
+            <Label Text="EXAMEN PRIMER PARCIAL" TextColor=" #dcbcac" HorizontalTextAlignment="Center"  FontSize="20" FontAttributes="Bold"/>
+
+        </Frame>
+
+
+     
+
+        <Image Source="https://cdn.pixabay.com/photo/2016/03/21/20/05/image-1271454_960_720.png" x:Name="imagen" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120" />
+        <StackLayout Orientation="Horizontal" Padding="30,12,2,2">
+            <Button Text="Tomar Foto" FontSize="12"  BackgroundColor=" #a4847c " FontAttributes="Bold" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" CornerRadius="60" WidthRequest="170"
+         HeightRequest="50" />
+            <Button Text="Agregar Long/Latid" FontSize="12" FontAttributes="Bold" x:Name="btn01" Clicked="btn01_Clicked" 
+            WidthRequest="160" HeightRequest="50" 
+            CornerRadius="60" VerticalOptions="Start" HorizontalOptions ="Start" BackgroundColor   ="#a4847c " Margin="0,3,0,3"/>
+
+
+        </StackLayout>
+
+        <Label Text="Latitud" TextColor=" #f4f4f4" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" IsReadOnly="true"  x:Name="txtlatitud" TextColor=" #dcbcac" />
+
+        <Label Text="Longitud" TextColor=" #f4f4f4" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text"  IsReadOnly="true" TextColor="  #dcbcac" x:Name="txtlongitud" />
+
+        <Label Text="Nombre Ubicación" TextColor=" #f4f4f4" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdescripcion"  TextColor="  #dcbcac" />
+
+        <Label Text="Descripción" TextColor=" #f4f4f4" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdcorta"  TextColor="  #dcbcac"/>
+
+
+        <StackLayout Orientation="Horizontal" Padding="30,12,2,2">
+            <Button TextColor=" #dcbcac " Text="Agregar Ubicación" x:Name="btnguardar" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="170" Clicked="btnguardar_Clicked"
+         HeightRequest="60" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor=" #5c4444 "/>
+
+            <Button Text="Lista Ubicación" x:Name="ubicaciones" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="170"
+         HeightRequest="60" TextColor=" #dcbcac " CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor=" #5c4444 " Clicked="btn02_Clicked"/>
+
+
+        </StackLayout>
+
+       
+
+        
+
+
+    </StackLayout>
+
+
+
+
+</ContentPage>
